@@ -1,0 +1,135 @@
+.sa-cta-wrapper {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sa-cta-container {
+  width: 80%;
+  max-width: 1280px;
+  border: 1px solid var(--whit-gray-color);
+  padding: 60px;
+  background-color: transparent;
+}
+
+.sa-cta-top-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  background-color: transparent;
+}
+
+.sa-icon-box {
+  background-color: var(--whit-gray-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;}
+
+  .sa-icon-box img {
+    width: 80px;
+    height: 80px;
+  }
+
+
+.sa-cta-text {
+  background-color: transparent;
+  max-width: 900px;
+}
+
+.sa-cta-main-title {
+  color: #98989a !important;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+
+  background-color: transparent;
+}
+.sa-cta-sub-text {
+  color: #98989a !important;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: transparent;
+}
+
+.sa-cta-bottom-bar {
+  display: flex;
+  align-items: center;
+  background-color: var(--whit-gray-color);
+  gap: 20px;
+  padding: 20px 30px;
+  border: 1px solid var(--whit-gray-color);
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  background-color: transparent;
+}
+.sa-welcome-box {
+  background-color: transparent;
+}
+.sa-welcome-label {
+  color: #98989a;
+  font-size: 18px;
+}
+.sa-message-box {
+  background-color: #1f1f1f;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.5;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.sa-cta-btn {
+  padding: 14px 22px;
+  border-radius: 8px;
+  background-color: var(--lime-green-color);
+  border: none;
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 992px) {
+  .sa-cta-wrapper {
+    padding: 40px 24px;
+  }
+
+  .sa-cta-container {
+    padding: 30px;
+  }
+
+  .sa-cta-top-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .sa-cta-main-title {
+    max-width: 95%;
+  }
+  .sa-cta-sub-text {
+    max-width: 95%;
+  }
+
+  .sa-icon-box {
+    margin-bottom: 10px;
+  }
+
+  .sa-cta-bottom-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .sa-message-box {
+    margin: 5px;
+  }
+
+  .sa-cta-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
