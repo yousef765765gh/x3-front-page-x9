@@ -6,6 +6,7 @@ import Process from './pages/process'
 import About from './pages/About'
 import NavBar from './components/NavBar/NavBar'
 import Contact from './pages/Contact'
+import Footer from './components/Footer/Footer'
 
 function App() {
   const navitem =[
@@ -30,13 +31,22 @@ function App() {
       href:"/contact_us"
     }
   ]
+  const liFooter = [
+    { content: "Home" },
+    { content: "Services" },
+    { content: "Work" },
+    { content: "Process" },
+    { content: "About" },
+    { content: "Careers" },
+    { content: "Contact" }
+  ]
   return (
     <>
     <NavBar
       logo="/assets/img/logo-navbar.png"
       items={navitem}
       btn="Contact Us"
-      media_btn= "/assets/img/nav-ul-media.png"
+      media_btn= "/assets/img/nav-ul-media.svg"
     />
     <Routes>
       <Route path="/" element={<Home/>}/>
@@ -45,6 +55,10 @@ function App() {
       <Route path="/about" element={<About/>}/>
       <Route path="/contact_us" element={<Contact/>}/>
     </Routes>
+    <Footer
+      logo="/assets/img/logo-navbar.png"
+      items={liFooter}
+    />
     </>
   )
 }
