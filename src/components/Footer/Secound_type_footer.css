@@ -1,0 +1,31 @@
+.secound_type_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    ul{
+        gap: 30px;
+        li{
+            border-bottom: 1px solid var(--whit-gray-color);
+            padding-bottom: 16px;
+            img{
+            padding-right: 6px;
+            max-width: 24px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px){
+    .secound_type_footer{
+        flex-direction: column;
+        gap: 20px;
+        ul{
+            flex-direction: column;
+            width: 100%;
+            li {
+                width: 100%;
+            }
+        }
+    }
+}
