@@ -1,9 +1,21 @@
 import React, { useState } from "react";
 import "./ContactForm.css";
+import AboutHeroSection from "../about_hero_section/AboutHeroSection";
+import ContactHero from "/assets/img/faq section Home+hero section process+contactusfaq.png"
 
 const ContactForm = () => {
   return (
+    <div>
+       <AboutHeroSection 
+                hasButton={false}             
+                imageBackground={ContactHero}
+                titleSection="Contact Us"
+                contentSection="Get in touch with us today and let us help you with any questions or inquiries you may have."
+            />
+    
+    
     <section className="sa-contact-section">
+      
     <div className="sa-contact-container">
   
       <div className="sa-contact-box">
@@ -126,6 +138,7 @@ const ContactForm = () => {
 
   </div>
 </section>
+</div>
   );
 };
 export default ContactForm;
