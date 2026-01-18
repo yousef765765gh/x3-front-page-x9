@@ -16,13 +16,14 @@ const AboutCTA = () => {
                     </div>
                 </div>
                 <div className="sa-cta-bottom-bar">
-                <span className="sa-welcome-label">Welcome to SquareUp</span>
-                    <div className="sa-message-box">
-                       
-                         Where collaboration, Expertise, and Client-Centricity 
-                        Intersect to Shape the Future of Digital Innovation.
-                    </div> 
-                    <button className="sa-cta-btn">Start Project</button>
+                <div className="sa-sub-container"> 
+        <span className="sa-welcome-label">Welcome to SquareUp</span>
+        <div className="sa-message-box">
+             Where collaboration, Expertise, and Client-Centricity 
+             Intersect to Shape the Future of Digital Innovation.
+        </div> 
+    </div>
+    <button className="sa-cta-btn">Start Project</button>
                 </div>
             </div>
         </section>

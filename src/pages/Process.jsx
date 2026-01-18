@@ -1,9 +1,18 @@
+import React from "react";
+
 const Process = () => {
     return (
         <div>
-            <h2>hello process</h2>
-        </div>
-    )
-}
+            {/* <AboutHeroSection 
+                hasButton={false}             
+                imageBackground="/assets/img/faq section Home+hero section process+contactusfaq.png"
+                titleSection="Process of Starting the Project"
+                contentSection="At SquareUp, we value transparency, collaboration, and delivering exceptional results."
+            /> */}
 
-export default Process
+            
+        </div>
+    );
+};
+
+export default Process;

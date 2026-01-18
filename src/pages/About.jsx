@@ -1,12 +1,19 @@
-import '../components/AboutCTA/AboutCTA'
-import AboutCTA from '../components/AboutCTA/AboutCTA'
+import React from "react";
+import AboutCTA from "../components/AboutCTA/AboutCTA";
+
+
 const About = () => {
     return (
         <div>
-            {/* <h2>hello about</h2> */}
-            <AboutCTA/>
+            {/* <AboutHeroSection 
+                hasButton={false}             
+                imageBackground="/assets/img/services p Home + hero p about.png"
+                titleSection="About Us"
+                contentSection="Welcome to SquareUp, where collaboration, expertise, and client-centricity intersect to shape the future of digital innovation."
+            /> */}
+            <AboutCTA />
         </div>
-    )
-}
+    );
+};
 
-export default About
+export default About;
