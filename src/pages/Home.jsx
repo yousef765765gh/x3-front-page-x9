@@ -28,8 +28,8 @@ const Home = () => {
                 hasButton={false}
                 imageBackground={ChooseSquareUp}
                 titleSection="Why Choose SquareUp?"
-                contentSection="Experience excellence in digital craftsmanship with our team of skilled professionals dedicated to delivering exceptional results."/>
-            <div className="yb-why-choose"> */}
+                contentSection="Experience excellence in digital craftsmanship with our team of skilled professionals dedicated to delivering exceptional results."/> */}
+            <div className="yb-why-choose">
                 {defaultChoseSquareUp.map((item) => (
                     <OurServices
                         key={item.id}
