@@ -2,7 +2,7 @@ import './SectionAtSquareUp.css'
 import TitleAtSquer from '../TitleAtSquer/TitleAtSquer'
 import { useState } from 'react';
 import ProcessCard from '../ProcessCard/ProcessCard';
-import processData from "../data/ProcessDataAtSquar.json"; 
+import processData from "../../data/ProcessDataAtSquar.json"; 
 
 const SectionAtSquareUp = () => {
   const [showAll, setShowAll] = useState(false);

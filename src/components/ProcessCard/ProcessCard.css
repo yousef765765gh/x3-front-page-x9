@@ -17,17 +17,24 @@
             color: var(--whit-green-text-color);
             font-weight: 600;
             font-size: 150px;
+            padding-bottom: 10px;
         }
-        h3{
+        .title-card{
+            width: 100%;
+            padding-top: 43px;
+            /* height: 62px; */
+            h3{
             color: rgba(152, 152, 154, 1);
             padding-bottom: 26px;
             padding-left: 10px;
-            margin-top: 43px;
+            /* margin-top: 43px; */
             font-weight: 500;
             font-size: 30px;
-            width: 100%;
+            /* width: 100%; */
             border-bottom: 1px solid var(--whit-gray-color);
         }
+        }
+      
     }
     .text-card{
         p{
@@ -45,12 +52,17 @@
                 height: 84px;
                 h2{
                     font-size: 120px;
+                    padding-bottom: 7px;
                 }
-                h3{
+                .title-card{
+                    padding-top: 35px;
+                    h3{
                     padding-bottom: 20px;
                     padding-left: 10px;
                     font-size: 24px;
                 }
+                }
+                
             }
             .text-card{
                 p{
@@ -67,12 +79,16 @@
                 height: 56px;
                 h2{
                     font-size: 80px;
+                    padding-bottom: 4px;
                 }
+                .title-card{
+                    padding-top: 18px;
                     h3{
                         padding-bottom: 14px;
                         padding-left: 10px;
                         font-size: 20px;
                     }
+                }
             }
                 .text-card{
                     p{

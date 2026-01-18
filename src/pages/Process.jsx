@@ -1,4 +1,4 @@
-import SectionAtSquareUp from "../components/NavBar/SectionAtSquareUp/SectionAtSquareUp"
+import SectionAtSquareUp from "../components/SectionAtSquareUp/SectionAtSquareUp"
 
 const Process = () => {
     return (
