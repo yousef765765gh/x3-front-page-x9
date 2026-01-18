@@ -1,4 +1,6 @@
 import React from "react";
+import "../components/AboutHeroSection/AboutHeroSection"
+
 
 const Home = () => {
     return (
