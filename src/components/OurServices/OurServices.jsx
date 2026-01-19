@@ -1,23 +1,32 @@
-import { Link } from "react-router-dom"
-import "./OurServices.css"
+import AboutHeroSection from "../about_hero_section/AboutHeroSection"
+import OurServicesAndChoosesq from "./OurServicesAndChoosesq"
+import defaultServices from "/src/data/defaultServices.json"
+import OurServer from "/assets/img/services p Home + hero p about.png";
 
-const OurServices = ({icon , title , description , showButton = true , horizontal = false}) => {
-    return (
-        <div className="yb-card">
-            <div className={`yb-container ${horizontal ? "horizontal" : ""}`}>
-                <div className="yb-icon">
-                <img className="yb-img" src={icon} />
-                </div>
-                <h1 className="yb-title">{title}</h1>
-            </div>
-            <p className="yb-description">{description}</p>
-            {showButton && (
-                <div className="yb-btn">
-                    <Link to="/Work" className="yb-link">{showButton}</Link>
-                </div>
-            )}
-        </div>
-    )
+const OurServices = () => {
+  return (
+    <>
+        <section className="shareServicesAndChooseSq">
+                    <AboutHeroSection
+                        hasButton={false}
+                        imageBackground={OurServer}
+                        titleSection="Our Services"
+                        contentSection="Transform your brand with our innovative digital solutions that captivate and engage your audience."/>
+                    <div className="yb-our-services">
+                        {defaultServices.map((item) => (
+                            <OurServicesAndChoosesq
+                                key={item.id}
+                                icon={item.icon}
+                                title={item.title}
+                                description={item.description}
+                                horizontal={false}
+                                showButton={item.showButton}
+                            />
+                            ))}
+                    </div>
+                </section>
+    </>
+  )
 }
 
 export default OurServices
