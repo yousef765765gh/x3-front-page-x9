@@ -37,7 +37,6 @@ const SectionAtSquareUp = () => {
           {showAll ? "Show Less" : "Show More"}
         </button>
       </div>
-
     </section>
   );
 };
