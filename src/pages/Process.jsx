@@ -1,8 +1,10 @@
+import SectionAtSquareUp from "../components/SectionAtSquareUp/SectionAtSquareUp"
+
 const Process = () => {
     return (
-        <div>
-            <h2>hello process</h2>
-        </div>
+        <>
+            <SectionAtSquareUp/>
+        </>
     )
 }
 
