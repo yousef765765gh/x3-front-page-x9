@@ -23,7 +23,6 @@
 }
 
 .sa-icon-box {
-  background-color: var(--whit-gray-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,7 +88,7 @@
   padding: 10px ;
   border-radius: 8px;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
   border-left: 1px solid var(--whit-gray-color);
   line-height: 150%;
