@@ -12,7 +12,7 @@ const SectionAtSquareUp = () => {
       <AboutHeroSection
                 hasButton={false}            
                 imageBackground={heroProcess}
-               titleSection="Process of Starting the Project"
+                titleSection="Process of Starting the Project"
                 contentSection="At SquareUp, we value transparency, collaboration, and delivering exceptional results."
             />
         <TitleAtSquer

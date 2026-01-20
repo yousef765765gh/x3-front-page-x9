@@ -1,6 +1,4 @@
-.shareServicesAndChooseSq{
-    padding: 0 162px;
-}
+
 /* ايقونة الكرت */
 .yb-icon{
     border-radius: 10px;
@@ -24,14 +22,11 @@
 .yb-title{
     color: white;
 }
-
-.yb-our-services{
-    display: flex;
-    .yb-card{
-        width: 100%;
-        padding: 50px;
-    }
-
+/* تنسيق الكرت بوجود الزر */
+.yb-card{
+    border: 1px solid var(--whit-gray-color);
+    width: 100%;
+    padding: 50px;
     .yb-title{
         font-size: 30px;
         font-weight: 600;
@@ -52,162 +47,119 @@
         }
     }
 }
-
-.yb-why-choose{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    .yb-card{
+/* تنسيق الكرت بدون زر */
+    .yb-card.no-button{
         border: 1px solid var(--whit-gray-color);
         padding: 80px;
-    }
-    .yb-title{
-        font-size: 26px;
-        font-weight: 500;
-        margin-bottom: 40px;
-    }
-    
-    .horizontal{
-        display: flex;
-        align-items: center;
-        margin-bottom: 40px;
-        gap: 28px;
-    }
-}
-
-.yb-card{
-    border: 1px solid var(--whit-gray-color);
-}
-
-.yb-description{
-    font-weight: 400;
-}
-
-@media screen and (max-width: 1440px) {
-    .shareServicesAndChooseSq{
-    padding: 0 80px;
-    }
-    .yb-our-services{
-    
-    .yb-card{
-        padding: 40px;
-    }
-
-    .yb-title{
-        font-size: 24px;
-        margin-bottom: 14px;
-    }
-
-    .yb-description{
-        font-size: 16px;
-        margin-bottom: 24px;
-    }
-
-    .yb-btn{
-    padding: 14px 16px;
-    border-radius: 6px;
-    .yb-link{
-        font-size: 14px;
+        .yb-title{
+            font-size: 26px;
+            font-weight: 500;
+            margin-bottom: 40px;
+        }
+        
+        .horizontal{
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            gap: 28px;
         }
     }
-}
 
-    .yb-why-choose{
-
+/* شاشات اللابتوب */
+@media screen and (max-width: 1440px) {
+    /* تنسيق الكرت بوجود زر  */
     .yb-card{
-        padding: 60px;
+        padding: 40px;
+
+        .yb-title{
+            font-size: 24px;
+            margin-bottom: 14px;
+        }
+
+        .yb-description{
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+
+        .yb-btn{
+        padding: 14px 16px;
+        border-radius: 6px;
+        .yb-link{
+            font-size: 14px;
+            }
+        }
     }
 
+/*تنسيق الكرت بدون زر */
+.yb-card.no-button{
+    padding: 60px;
     .yb-title{
         font-size: 20px;
     }
-
     .yb-description{
         font-size: 16px;
     }
-
     .horizontal{
         margin-bottom: 30px;
         gap: 14px;
     }
 }
 
-    .yb-icon{
+.yb-icon{
     border-radius: 8px;
     width: 70px;
     height: 70px;
     padding: 20px;
     margin-bottom: 30px;
-
     .yb-img{
         width: 30px;
         height: 30px;
     }
 }
 }
-
+/* شاشات الصغيرة */
 @media screen and (max-width: 992px){
-    .shareServicesAndChooseSq{
-    padding: 0 16px;
-    }
-    .yb-our-services{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    /* تنسيق الكرت  بوجود الزر */
     .yb-card{
         padding: 30px;
-
         .yb-container{
             display: flex;
             align-items: center;
             gap: 24px;
         }
-    }
-
     .yb-title{
         font-size: 20px;
         margin-bottom: 0px;
     }
-
     .yb-description{
         font-size: 14px;
     }
 }
-
-    .yb-why-choose{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    .yb-card{
+/* تنسيق الكرت بدون زر */
+    .yb-card.no-button{
         max-width: 100%;
         min-height: min-content;
         padding: 40px 30px;
+        .yb-title{
+            font-size: 20px;
+        }
+        .yb-description{
+            font-size: 16px;
+        }
+        .horizontal{
+            margin-bottom: 24px;
+        }
     }
-
-    .yb-title{
-        font-size: 20px;
-    }
-
-    .yb-description{
-        font-size: 16px;
-    }
-
-    .horizontal{
-        margin-bottom: 24px;
-    }
-}
 
     .yb-icon{
-    border-radius: 8px;
-    width: 58px;
-    height: 58px;
-    padding: 16px;
-    margin-bottom: 0px;
-
-    .yb-img{
-        width: 26px;
-        height: 26px;
+        border-radius: 8px;
+        width: 58px;
+        height: 58px;
+        padding: 16px;
+        margin-bottom: 0px;
+        .yb-img{
+            width: 26px;
+            height: 26px;
+        }
     }
-}
 }

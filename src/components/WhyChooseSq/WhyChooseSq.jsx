@@ -1,6 +1,7 @@
 import AboutHeroSection from "../about_hero_section/AboutHeroSection"
-import OurServicesAndChoosesq from "./OurServicesAndChoosesq"
+import OurServicesAndChoosesq from "../cardOurServicesAndChoosesq/OurServicesAndChoosesq"
 import defaultChoseSquareUp from "/src/data/defaultChoseSquareUp.json"
+import "./WhyChooseSq.css"
 import ChooseSquareUp from "/assets/img/عامةهي مشتركة squre lap +des+mob.png"
 
 
@@ -18,6 +19,7 @@ const WhyChooseSq = () => {
                 <div className="yb-why-choose">
                     {defaultChoseSquareUp.map((item) => (
                         <OurServicesAndChoosesq
+                            showButton = {false}
                             key={item.id}
                             icon={item.icon}
                             title={item.title}
