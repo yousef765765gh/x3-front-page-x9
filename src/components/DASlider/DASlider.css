@@ -133,8 +133,6 @@ ARROWS
 .Button-right:active {
     color: var(--whit-green-text-color);
 
-    /* background: rgba(0, 255, 170, 0.2); */
-
     transform: translateY(-50%) scale(1.1);
 
     box-shadow: 0 0 20px var(--whit-green-text-color);
@@ -208,8 +206,7 @@ MOBILE
 ================================ */
 @media (max-width: 992px) {
     .DA_Button {
-        padding: 10px 14px;
-        font-size: 13px;
+    display: none;
     }
 
     .Button-left,
@@ -218,6 +215,6 @@ MOBILE
     }
 
     .Dots {
-        display: flex;
+        min-width: 30px;
     }
 }

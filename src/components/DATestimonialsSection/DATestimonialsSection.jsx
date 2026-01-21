@@ -11,7 +11,7 @@ const DATestimonialsSection = () => {
                 hasButton={false}
                 imageBackground={slider}
                 titleSection="What our Clients say About us"
-                contetSection="At SquareUp, we take pride..."
+                contetSection="At SquareUp, we take pride in delivering exceptional digital products and services that drive success for our clients. Here's what some of our satisfied clients have to say about their experience working with us"
             />
 
             <section className="datestimonials-section">
