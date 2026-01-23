@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef  } from "react";
 import "./DASlider.css";
 import CardsData from "../../data/TestimonialsCards.json";
 import SliderCardHome from "../Slidercardhome/SliderCardHome";
