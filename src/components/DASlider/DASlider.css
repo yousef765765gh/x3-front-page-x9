@@ -29,7 +29,8 @@
           border-radius: 50%;
           z-index: 1;
           &:hover{
-              
+            background-color: var(--whit-green-text-color);
+            color: black;
           }
       }
       .Button-left{
