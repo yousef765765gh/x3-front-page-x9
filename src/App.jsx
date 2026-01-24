@@ -53,7 +53,7 @@ function App() {
       <Route path="/work" element={<Work/>}/>
       <Route path="/process" element={<Process/>}/>
       <Route path="/about" element={<About/>}/>
-      <Route path="/contact_us" element={<Contact/>}/>
+      <Route path="/contact-us" element={<Contact/>}/>
     </Routes>
     <Footer
       logo="/assets/img/logo-navbar.png"

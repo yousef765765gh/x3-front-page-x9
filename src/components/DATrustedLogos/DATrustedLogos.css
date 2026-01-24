@@ -5,14 +5,16 @@ Trusted Logos Section
 /* الحاوية العامة */
 .logos-wrapper {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 0 161px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    margin-top: -440px;
-    background-color: var(--dark-gray-color);
+    margin-top: -2px;
 }
 
 .logos-title {
@@ -40,13 +42,14 @@ Trusted Logos Section
     border: 1px solid var(--whit-gray-color);
     box-sizing: border-box;
 }
+
 /* container اللوجوهات */
 .logos-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(0px, 1fr)); /* مرن على الشاشات الكبيرة */
-    gap: 30px;
-    justify-items: center;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
 /* كل لوجو */
@@ -73,7 +76,7 @@ Trusted Logos Section Media Queries
 
     .logos-title {
         font-size: 16px;
-        padding: 14px 24px;
+        padding: 14px 4px;
     }
 
     .logos-box {
@@ -82,33 +85,46 @@ Trusted Logos Section Media Queries
 
     .logos-container {
         gap: 60px;
-        
+
     }
 
     .logo {
         height: 28px;
-        
-}
 
-/* للشاشات أقل من 992px */
-@media screen and (max-width: 992px) {
-    .logos-wrapper {
-        padding: 0 16px;
-        margin-top: -300px;
-        background-color: var(--dark-gray-color);
-    }
-    
-    .logos-title {
-        font-size: 14px;
     }
 
-    .logo {
-        height: 24px;
-    }
-    .logos-container {
-        grid-template-columns: repeat(3, 1fr); 
-        gap: 25px;
-    }
+    /* للشاشات أقل من 992px */
+    @media screen and (max-width: 992px) {
+        .logos-wrapper {
+            padding: 0 16px;
+            margin-top: -300px;
+            background-color: var(--dark-gray-color);
+            grid-template-rows: repeat(3 , 2fr);
+        }
 
-}
+        .logos-title {
+            font-size: 14px;
+            padding: 12px 40px;
+        }
+
+        .logos-box {
+            padding: 50px 20px 32px;
+        }
+
+        .logos-container {
+            gap: 40px;
+        }
+
+        .logo {
+            height: 24px;
+        }
+
+        .DA_Hero .DA_Btn,
+        .DA_Hero .DAGreen_Btn {
+            font-size: 14px;
+            padding: 12px 20px;
+            border-radius: 8px;
+        }
+
+    }
 }

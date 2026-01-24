@@ -1,27 +1,28 @@
-import TitleAtSquer from '../TitleAtSquer/TitleAtSquer';
+import { Link } from "react-router-dom"
+import "./DAHero.css"
 
-import { Link } from "react-router-dom";
-import './DAHero.css'
 
-const DAHero = () => {
+const DAHero = ({ image, title, btn1, btn2 }) => {
     return (
-        <div className="container-wrapper">
-            <section className="DAHero-container" >
-                <TitleAtSquer
-                    title="A Digital Product Studio that will Work"
-                    description=
-                    <>
-                        <>
-                            For <span> Startups </span> , <span> Enterprise leaders </span> , <span>Media & Publishers</span> and 
-                            <span> Social Good</span>
-                        </>
-                    </>
-                />
-                <div className="Dabtns">
-                    <Link to="/work" className='DABtn'>Our Works</Link>
-                    <Link to="/contact_us" className='DAGreenBtn'>Contact Us</Link>
+        <div className="DA-Container">
+            <div className="DA_Hero">
+                <div className="DA_ImgWrapper">
+                    <img src={image} alt="" />
                 </div>
-            </section>
+
+                <h1 className="DA_Title">{title}</h1>
+
+                <p className="DA_Paragraph">
+                    For <span>Startups</span> , <span>Enterprise leaders</span> ,
+                    <span>Enterprise leaders</span> and <span>Social Good</span>
+                </p>
+
+                <div className="DA_Btns">
+                    <Link to="/work" className="DA_Btn">{btn1}</Link>
+                    <Link to="/contact-us" className="DAGreen_Btn">{btn2}</Link>
+                </div>
+
+            </div>
         </div>
 
     )
