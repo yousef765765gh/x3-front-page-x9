@@ -20,7 +20,7 @@
     border: 1px solid #262626;
 }
 
-.title-atsqure h1 {
+/* .title-atsqure h1 {
     position: relative;
     top: -60px;
     width: 50%;
@@ -41,10 +41,10 @@
     margin: 0 auto;
     font-size: 22px;
     backdrop-filter: blur(12px);
-    margin-bottom: 30px;
+    margin-bottom: 30px; */
 
 
-    span {
+    /* span {
         padding: 12px 10px;
         font-family: 'Barlow';
         font-size: 22px;
@@ -54,7 +54,7 @@
         background-color: #262626;
 
     }
-}
+} */
 
 .Dabtns {
     margin-top: -30px;
