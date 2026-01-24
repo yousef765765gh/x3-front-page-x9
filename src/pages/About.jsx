@@ -2,6 +2,7 @@ import AboutSquareUp from "../components/AboutSquareUp/AboutSquareUp"
 import SectionOurStory from "../components/SectionOurStory/SectionOurStory"
 import AboutSquareUpImage from "/assets/img/SquareUpsectionabout.png"
 import SquareUpImage from "/assets/img/LogoSq.svg"
+import TodaySquareUp from "../components/TodaySquareUp/TodaySquareUp"
 
 const About = () => {
 
@@ -14,6 +15,14 @@ const About = () => {
         icon={SquareUpImage}
         />
             <SectionOurStory/>
+            <TodaySquareUp
+            icon="/assets/img/Logo.png"
+            title="Today, SquareUp Continues to Thrive as a Leading Digital Product Agency....."
+            description="Combining the power of design, engineering, and project management to create transformative digital experiences. They invite you to join them on their journey and discover how they can help bring your digital ideas to life."
+            title2="Welcome to SquareUp"
+            description2="Where collaboration, Expertise, and Client-Centricity Intersect to Shape the Future of Digital Innovation."
+            button="Start Project"
+            />
         </>
     )
 }
