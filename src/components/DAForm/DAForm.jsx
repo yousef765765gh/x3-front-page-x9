@@ -72,7 +72,6 @@ const MmContactUsForm = ({ editingItem, onSave }) => {
 
     return (
         <div className="form-contact-us-container">
-            {/* up icons */}
             <div className="da-contact-contactIcons">
                 {topIcons.map((item, index) => (
                     <div

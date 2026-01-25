@@ -6,6 +6,9 @@ nav {
     border-bottom: 1px solid var(--whit-gray-color);
     padding: 22px 162px; 
     z-index: 6;
+    /* position: fixed; */
+    width: 100%;
+    background-color: var(--dark-gray-color);
     img {
         max-width:  178px;
     }

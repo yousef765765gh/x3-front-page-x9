@@ -15,16 +15,17 @@ export default function LogosBar() {
     <p className="logos-title">Trusted by 250+ Companies</p>
 
     <div className="logos-box">
-        <div className="logos-container">
+        
             {logos.map((logo) => (
+                <div key={logo.name} className="logos-container">
                 <img
-                    key={logo.name}
                     src={logo.src}
                     alt={logo.name}
                     className="logo"
                 />
+                </div>
             ))}
-        </div>
+        
     </div>
 </div>
 
