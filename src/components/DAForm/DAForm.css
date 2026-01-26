@@ -9,7 +9,7 @@
     .contact-us-form {
         width: 100%;
         padding: 80px;
-        border: 1px solid var( --whit-gray-color);
+        border: 1px solid var(--whit-gray-color);
         display: flex;
         flex-direction: column;
         gap: 40px;
@@ -50,8 +50,8 @@
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
-                background: var( --whit-gray-color);
-                border: 1px solid var( --whit-gray-color);
+                background: var(--whit-gray-color);
+                border: 1px solid var(--whit-gray-color);
                 border-radius: 8px;
 
                 input {
@@ -68,7 +68,7 @@
             background: var(--whit-gray-color);
             border: 1px solid var(--whit-gray-color);
             border-radius: 12px;
-            
+
 
 
             .resons {
@@ -83,7 +83,6 @@
                     align-items: center;
                     font-weight: 400;
                     font-size: 18px;
-                    color: var(--whit-gray-colorr);
                     cursor: pointer;
 
                     .reson-checkbox {
@@ -92,14 +91,41 @@
                         height: 28px;
                         margin-right: 10px;
                         background: var(--whit-gray-color);
-                        border: 1px solid #656567;
+                        border: 1px solid rgba(51, 51, 51, 1);
                         padding: 4px;
                         border-radius: 4px;
                         cursor: pointer;
+                        position: relative;
+                    }
+
+                    .checkbox-icon {
+                        position: absolute;
+                        width: 28px;
+                        height: 28px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        pointer-events: none;
+                    }
+
+                    .checkbox-icon svg {
+
+                        color: var(--lime-green-color);
+                        opacity: 0;
+
+                    }
+
+                    .reson-checkbox:checked+.checkbox-icon svg {
+                        width: 20px;
+                        height: 20px;
+
+                        opacity: 1;
+                        transform: scale(1);
                     }
                 }
             }
         }
+
 
         .user-message {
             background: var(--whit-gray-color);
@@ -172,7 +198,7 @@
     padding: 18px 24px;
     background-color: var(--whit-gray-color);
     border-radius: 8px;
-    
+
 
     .icon1 {
         width: 26.25px;
@@ -205,7 +231,7 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    border-left: 1px solid var(--whit-gray-color) ;
+    border-left: 1px solid var(--whit-gray-color);
     border-right: 1px solid var(--whit-gray-color);
 }
 
@@ -481,6 +507,7 @@
             }
         }
     }
+
     .da-contact-contactIcons {
         width: 100%;
         display: flex;

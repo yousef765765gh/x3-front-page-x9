@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "./DAForm.css";
 
+import { HiCheck } from "react-icons/hi";
+
 const MmContactUsForm = ({ editingItem, onSave }) => {
     const [fullName, setFullName] = useState("");
     const [email, setEmail] = useState("");
@@ -127,6 +129,9 @@ const MmContactUsForm = ({ editingItem, onSave }) => {
                             checked={resons.includes(reson)}
                             onChange={handleCheckboxChange}
                         />
+                        <span className="checkbox-icon">
+                            <HiCheck/>
+                        </span>
                                 {reson}
                             </label>
                         ))}
