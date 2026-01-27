@@ -1,8 +1,10 @@
-.form-contact-us-container {
+
+.form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #fff;
+
     .contact-us-form {
         width: 100%;
         padding: 80px;
@@ -10,44 +12,54 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
+
         label {
             background: none;
             font-weight: 500;
             font-size: 22px;
         }
+
         input {
             font-size: 18px;
             padding-bottom: 6px;
-            background: none;
-            outline: none;
-            border: none;
             border-bottom: 1px solid #656567;
             color: #656567
         }
+
         input::placeholder,
         textarea::placeholder {
             font-size: 18px;
             color: #656567;
         }
+
         .name-and-email-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 40px;
+
             .name-email {
                 width: 50%;
                 padding: 24px 40px;
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
-                background: var(--whit-gray-color);
+                background-color: var(--whit-gray-color);
                 border: 1px solid var(--whit-gray-color);
                 border-radius: 8px;
+
                 input {
                     width: 360px;
+                    background-color: #262626;
+                    outline: none;
+                    background: none;
+                    border: none;
+                    border-bottom: 1px solid var(--whit-gray-color);
+
                 }
             }
         }
+
         .resons-container {
             padding: 40px;
             display: flex;
@@ -56,52 +68,59 @@
             background: var(--whit-gray-color);
             border: 1px solid var(--whit-gray-color);
             border-radius: 12px;
+
             .resons {
                 display: flex;
                 flex-wrap: wrap;
                 background: none;
                 row-gap: 24px;
-                label {
+
+                .reson-item {
                     width: 50%;
                     display: flex;
                     align-items: center;
                     font-weight: 400;
                     font-size: 18px;
+                    color: var(--whit-gray-colorr);
                     cursor: pointer;
+
                     .reson-checkbox {
                         appearance: none;
+                        -webkit-appearance: none;
                         width: 28px;
                         height: 28px;
                         margin-right: 10px;
                         background: var(--whit-gray-color);
-                        border: 1px solid rgba(51, 51, 51, 1);
-                        padding: 4px;
+                        border: 1px solid #656567;
                         border-radius: 4px;
                         cursor: pointer;
-                        position: relative;
+                        transition: all 0.2s ease;
                     }
-                    .checkbox-icon {
-                        position: absolute;
-                        width: 28px;
-                        height: 28px;
+
+                    .reson-checkbox:checked {
+                        background-color: var(--lime-green-color);
+                        border-color: var(--lime-green-color);
+                    }
+
+                    .reson-checkbox:checked::after {
+                        content: "✓";
+                        color: white;
+                        font-size: 18px;
+                        font-weight: bold;
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        pointer-events: none;
-                    }
-                    .checkbox-icon svg {
-                        color: var(--lime-green-color);
-                        opacity: 0;
-                    }
-                    .reson-checkbox:checked+.checkbox-icon svg {
-                        width: 20px;
-                        height: 20px;
-                        opacity: 1;
-                        transform: scale(1);
+                        height: 100%;
                     }
                 }
             }
         }
+
+        .reson-checkbox:checked {
+            background-color: var(--lime-green-color);
+            border-color: var(--lime-green-color);
+        }
+
         .user-message {
             background: var(--whit-gray-color);
             border: 1px solid var(--whit-gray-color);
@@ -110,21 +129,17 @@
             flex-direction: column;
             gap: 20px;
             padding: 24px 40px;
-
-            textarea {
+textarea {
                 border: none;
                 outline: none;
                 background: none;
                 resize: none;
-                font-family: Barlow;
                 font-size: 18px;
                 padding-bottom: 40px;
                 border-bottom: 1px solid #656567;
                 font-weight: 500;
                 font-size: 18px;
-                color: var(--MainFontColor);
             }
-
             textarea::placeholder {
                 padding-bottom: 6px;
                 border-bottom: 1px solid #656567;
@@ -132,17 +147,19 @@
             textarea:not(:placeholder-shown) {
                 border-bottom-color: transparent;
             }
+
             textarea:placeholder-shown {
                 border-bottom: 1px solid #656567;
             }
         }
 
-        .send {
+        .submit {
             width: max-content;
             margin: 0 auto;
             border-radius: 8px;
             padding: 18px 44px;
             background: var(--lime-green-color);
+            font-family: Barlow;
             font-weight: 500;
             font-size: 18px;
             color: black;
@@ -150,13 +167,13 @@
     }
 }
 
-/* up form */
-
 .da-contact-contactIcons {
+    width: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     gap: 30px;
     padding: 50px 30px;
+    border: 1px solid #262626
 
 }
 
@@ -169,23 +186,6 @@
     background-color: var(--whit-gray-color);
     border-radius: 8px;
 
-
-    .icon1 {
-        width: 26.25px;
-        height: 20.63px;
-    }
-
-    .icon2 {
-        width: 26.25px;
-        height: 26.25px;
-    }
-
-    .icon3 {
-        width: 20.63px;
-        height: 25.31px;
-    }
-
-
     .da_font_size_weight3 {
         color: #656567;
         font-weight: 500;
@@ -193,7 +193,6 @@
     }
 }
 
-/* down form */
 .da-contact-down-footer {
     width: 100%;
     display: flex;
@@ -204,7 +203,7 @@
     border-right: 1px solid var(--whit-gray-color);
 }
 
-.da-contact-line {
+.da-line {
     content: "";
     display: block;
     width: 1px;
@@ -218,12 +217,12 @@
     padding: 50px 0px;
 
     p {
-        color: #656567;
+        color: 656567;
         font-weight: 500;
         font-size: 22px;
     }
 
-    .monday-to-friday {
+    .day {
         margin-left: 14px;
         padding: 25px 30px;
         background-color: var(--whit-gray-color);
@@ -268,8 +267,7 @@
 
 
 @media screen and (max-width:1440px) {
-    .form-contact-us-container {
-
+    .form-container {
         .contact-us-form {
             padding: 60px;
             gap: 30px;
@@ -306,8 +304,7 @@
                 gap: 30px;
                 border-radius: 8px;
 
-
-                .resons {
+            .resons {
                     label {
                         font-size: 16px;
                     }
@@ -317,13 +314,16 @@
             .user-message {
                 padding: 20px 30px;
                 gap: 20px;
+
                 textarea {
                     font-weight: 400;
                     font-size: 16px;
                     padding-bottom: 34px;
+
                 }
             }
-            .send {
+
+            .submit {
                 padding: 14px 36px;
                 border-radius: 6px;
                 font-size: 14px;
@@ -331,7 +331,6 @@
         }
     }
 
-    /* up form */
     .da-contact-contactIcons {
         gap: 20px;
         padding: 40px 0;
@@ -362,13 +361,13 @@
         }
     }
 
-    /*down form */
+
     .da-contact-down-footer-buttom {
         p {
             font-size: 16px;
         }
 
-        .monday-to-friday {
+        .day {
             padding: 10px 20px;
         }
     }
@@ -394,10 +393,14 @@
             height: 20px;
         }
     }
+
+
 }
 
+
 @media screen and (max-width:992px) {
-    .form-contact-us-container {
+    .form-container {
+
         .contact-us-form {
             padding: 24px;
             gap: 30px;
@@ -458,7 +461,7 @@
                 }
             }
 
-            .send {
+            .submit{
                 width: 100%;
                 border-radius: 6px;
                 padding: 14px 36px;
@@ -480,7 +483,6 @@
         justify-content: center;
     }
 
-    /*down form */
     .da-contact-down-footer {
         width: 100%;
         display: flex;
@@ -492,7 +494,7 @@
         border-right: 1px solid var(--whit-gray-color);
     }
 
-    .da-contact-line {
+    .da-line {
         content: "";
         display: block;
         width: 100%;
@@ -500,13 +502,15 @@
         background-color: var(--whit-gray-color);
     }
 
-    .da-contact-down-footer-buttom {
+.da-contact-down-footer-buttom {
         padding: 20px 0px;
 
-        .monday-to-friday {
+        .day {
             border-radius: 4px;
         }
     }
+
+
     .da-contact-down-footer-stay-Connected {
         max-width: 358px;
         height: 112px;
@@ -523,6 +527,9 @@
             padding: 16px;
             border-radius: 6px;
         }
+    }
+    .reson-checkbox{
+    padding: 13px;
     }
 
 
