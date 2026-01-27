@@ -34,6 +34,7 @@
     }
     .text-card{
         p{
+            font-family: "Inter";
             color: rgba(152, 152, 154, 1);
             font-size: 18px;
             line-height: 150%;
