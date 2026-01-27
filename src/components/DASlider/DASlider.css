@@ -27,7 +27,6 @@
           border-radius: 50%;
           z-index: 1;
           &:hover{
-            /* background-color: rgb(68, 62, 62); */
             background-color: var(--whit-green-text-color);
             color: black;
           }

@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import "./DAForm.css";
 
 import { HiCheck } from "react-icons/hi";
-
+import AboutHeroSection from "../about_hero_section/AboutHeroSection";
+import heroform from "/assets/img/about us section Home+hero work.png"
 const MmContactUsForm = ({ editingItem, onSave }) => {
     const [fullName, setFullName] = useState("");
     const [email, setEmail] = useState("");
@@ -73,6 +74,13 @@ const MmContactUsForm = ({ editingItem, onSave }) => {
     };
 
     return (
+        <>
+        <AboutHeroSection
+                hasButton={false}
+                imageBackground={heroform}
+                titleSection="Contact Us"
+                contentSection="Get in touch with us today and let us help you with any questions or inquiries you may have."
+            />
         <div className="form-contact-us-container">
             <div className="da-contact-contactIcons">
                 {topIcons.map((item, index) => (
@@ -184,6 +192,7 @@ const MmContactUsForm = ({ editingItem, onSave }) => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 

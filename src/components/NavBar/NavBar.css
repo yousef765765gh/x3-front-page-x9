@@ -4,7 +4,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--whit-gray-color);
-    padding: 22px 162px; 
+    padding: 22px 0; 
     z-index: 6;
     /* position: fixed; */
     width: 100%;
@@ -47,7 +47,7 @@ nav {
 /* تنسيق على شاشات اللابتوب */
 @media screen and (max-width:1440px){
     nav{
-        padding: 23px 80px;
+        padding: 23px 0;
         img {
         max-width:  120px;
         }
@@ -68,7 +68,7 @@ nav {
 /* تنسيق على الشاشات الصغيرة */
 @media screen and (max-width:992px){
     nav{
-        padding: 48px 16px 23px 16px;
+        padding: 48px 0 23px 0;
         position: relative;
         z-index: 10;
         ul {

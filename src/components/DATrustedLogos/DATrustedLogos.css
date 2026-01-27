@@ -7,7 +7,6 @@ Trusted Logos Section
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 0 161px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +14,6 @@ Trusted Logos Section
 
 .logos-title {
     position: absolute;
-    /* top: 0px; */
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -60,9 +58,6 @@ Trusted Logos Section Media Queries
 
 /* للشاشات أقل من 1440px */
 @media screen and (max-width: 1440px) {
-    .logos-wrapper {
-        padding: 0 80px;
-    }
 
     .logos-title {
         font-size: 14px;
@@ -80,7 +75,6 @@ Trusted Logos Section Media Queries
     /* للشاشات أقل من 992px */
     @media screen and (max-width: 992px) {
         .logos-wrapper {
-            padding: 0 16px;
             background-color: var(--dark-gray-color);
         }
 

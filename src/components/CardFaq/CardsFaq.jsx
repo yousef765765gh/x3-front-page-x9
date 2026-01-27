@@ -14,7 +14,6 @@ const CardsFaq = ({ index, question, answer, isOpen, onToggle }) => {
                     <div className="content">
                         <h3 className="question">{question}</h3>
                         {isOpen && <p className="answer">{answer}</p>}
-
                     </div>
                     <span className="l-icon">{isOpen ? <FiX /> : <FiPlus />}</span>
                 </div>
@@ -28,6 +27,9 @@ const CardsFaq = ({ index, question, answer, isOpen, onToggle }) => {
     )
 }
 export default CardsFaq;
+
+
+
 
 
 

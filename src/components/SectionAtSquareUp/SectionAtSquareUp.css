@@ -1,6 +1,5 @@
 .at-square-up{
     max-width: 100%;
-    margin: 0 162px;
     height: max-content;
     border: 1px solid var(--whit-gray-color);
     border-top: none !important;
@@ -34,14 +33,8 @@
     }
 }
 
-@media screen and (max-width:1440px){
-    .at-square-up{
-        margin: 0 80px;
-    }
-}
 @media screen and (max-width:992px){
     .at-square-up{
-        margin: 0 16px;
         .at-squar-card{
             grid-template-columns: 1fr;
         }

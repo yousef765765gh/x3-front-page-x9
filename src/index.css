@@ -14,6 +14,7 @@
 
 body {
   background-color: var(--dark-gray-color);
+  padding: 0 161px;
 }
 
 :root {
@@ -25,4 +26,14 @@ body {
   /*لون الازرار و الايقونات*/
   --whit-green-text-color: #D8FF99;
   /*لون  بعض النصوص*/
+}
+@media screen and (max-width:1440px){
+  body{
+    padding: 0 80px;
+  }
+}
+@media screen and (max-width:992px){
+  body{
+    padding: 0 16px;
+  }
 }

@@ -7,6 +7,7 @@ import About from './pages/About'
 import NavBar from './components/NavBar/NavBar'
 import Contact from './pages/Contact'
 import Footer from './components/Footer/Footer'
+import Dashboard from './pages/Dashboard'
 
 function App() {
   const navitem =[
@@ -25,6 +26,10 @@ function App() {
     {
       content:"About",
       href:"/about"
+    },
+    {
+      content:"Dashboard",
+      href:"/dashboard"
     },
     {
       content:"Contact",
@@ -53,6 +58,7 @@ function App() {
       <Route path="/work" element={<Work/>}/>
       <Route path="/process" element={<Process/>}/>
       <Route path="/about" element={<About/>}/>
+      <Route path="/dashboard" element={<Dashboard/>}/>
       <Route path="/contact_us" element={<Contact/>}/>
     </Routes>
     <Footer

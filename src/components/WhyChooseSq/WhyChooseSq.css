@@ -1,19 +1,11 @@
-.shareServicesAndChooseSq{
-    padding: 0 162px;
-}
+
 .yb-why-choose{
     display: grid;
     grid-template-columns: repeat(2,1fr);}
 
-@media screen and (max-width: 1440px) {
-    .shareServicesAndChooseSq{
-    padding: 0 80px;
-    }
-}
+
 @media screen and (max-width: 992px){
-    .shareServicesAndChooseSq{
-    padding: 0 16px;
-    }
+
     .yb-why-choose{
         display: flex;
         flex-direction: column;
