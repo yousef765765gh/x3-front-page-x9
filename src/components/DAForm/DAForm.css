@@ -1,10 +1,17 @@
-
+/* =========================
+Main form container
+   ========================= */
 .form-container {
+    padding: 0 161px 0 163px;
+    font-family: "Barlow", "sans-serif";
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #fff;
 
+    /* =========================
+    Contact form wrapper
+       ========================= */
     .contact-us-form {
         width: 100%;
         padding: 80px;
@@ -13,25 +20,36 @@
         flex-direction: column;
         gap: 40px;
 
+        /* Form labels */
         label {
             background: none;
             font-weight: 500;
             font-size: 22px;
         }
 
+        /* Input fields */
         input {
+            font-family: Barlow;
             font-size: 18px;
             padding-bottom: 6px;
+            background: none;
+            outline: none;
+            border: none;
             border-bottom: 1px solid #656567;
             color: #656567
         }
 
+        /* Placeholder styles */
         input::placeholder,
         textarea::placeholder {
+            font-family: Barlow;
             font-size: 18px;
             color: #656567;
         }
 
+        /* =========================
+        Name & Email section
+           ========================= */
         .name-and-email-container {
             display: flex;
             justify-content: space-between;
@@ -44,22 +62,20 @@
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
-                background-color: var(--whit-gray-color);
+                background: var(--whit-gray-color);
                 border: 1px solid var(--whit-gray-color);
                 border-radius: 8px;
 
+                /* Input width inside card */
                 input {
                     width: 360px;
-                    background-color: #262626;
-                    outline: none;
-                    background: none;
-                    border: none;
-                    border-bottom: 1px solid var(--whit-gray-color);
-
                 }
             }
         }
 
+        /* =========================
+        Contact reasons section
+           ========================= */
         .resons-container {
             padding: 40px;
             display: flex;
@@ -75,6 +91,7 @@
                 background: none;
                 row-gap: 24px;
 
+                /* Single reason item */
                 .reson-item {
                     width: 50%;
                     display: flex;
@@ -84,6 +101,7 @@
                     color: var(--whit-gray-colorr);
                     cursor: pointer;
 
+                    /* Custom checkbox styling */
                     .reson-checkbox {
                         appearance: none;
                         -webkit-appearance: none;
@@ -96,12 +114,15 @@
                         cursor: pointer;
                         transition: all 0.2s ease;
                     }
+                    
 
+                    /* Checked checkbox background */
                     .reson-checkbox:checked {
                         background-color: var(--lime-green-color);
                         border-color: var(--lime-green-color);
                     }
 
+                    /* Checkmark icon */
                     .reson-checkbox:checked::after {
                         content: "✓";
                         color: white;
@@ -116,11 +137,15 @@
             }
         }
 
+        /* Fallback checked state */
         .reson-checkbox:checked {
             background-color: var(--lime-green-color);
             border-color: var(--lime-green-color);
         }
 
+        /* =========================
+        User message textarea
+           ========================= */
         .user-message {
             background: var(--whit-gray-color);
             border: 1px solid var(--whit-gray-color);
@@ -129,21 +154,26 @@
             flex-direction: column;
             gap: 20px;
             padding: 24px 40px;
+
             textarea {
                 border: none;
                 outline: none;
                 background: none;
                 resize: none;
+                font-family: Barlow;
                 font-size: 18px;
                 padding-bottom: 40px;
                 border-bottom: 1px solid #656567;
                 font-weight: 500;
-                font-size: 18px;
+                color: var(--MainFontColor);
             }
+
+            /* Placeholder behavior */
             textarea::placeholder {
                 padding-bottom: 6px;
                 border-bottom: 1px solid #656567;
             }
+
             textarea:not(:placeholder-shown) {
                 border-bottom-color: transparent;
             }
@@ -153,6 +183,7 @@
             }
         }
 
+        /* Submit button */
         .submit {
             width: max-content;
             margin: 0 auto;
@@ -167,15 +198,17 @@
     }
 }
 
+/* =========================
+Top contact icons section
+   ========================= */
 .da-contact-contactIcons {
-    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     gap: 30px;
     padding: 50px 30px;
-    border: 1px solid #262626
 }
 
+/* Individual contact icon card */
 .da-contact-contactIcon {
     display: flex;
     justify-content: start;
@@ -184,6 +217,7 @@
     padding: 18px 24px;
     background-color: var(--whit-gray-color);
     border-radius: 8px;
+
     .da_font_size_weight3 {
         color: #656567;
         font-weight: 500;
@@ -191,6 +225,9 @@
     }
 }
 
+/* =========================
+Footer section
+   ========================= */
 .da-contact-down-footer {
     width: 100%;
     display: flex;
@@ -201,6 +238,7 @@
     border-right: 1px solid var(--whit-gray-color);
 }
 
+/* Vertical / horizontal divider */
 .da-line {
     content: "";
     display: block;
@@ -208,15 +246,20 @@
     height: 154px;
     background-color: var(--whit-gray-color);
 }
+
+/* Operating days block */
 .da-contact-down-footer-buttom {
     display: flex;
     align-items: center;
     padding: 50px 0px;
+
     p {
+        font-family: Barlow;
         color: 656567;
         font-weight: 500;
         font-size: 22px;
     }
+
     .day {
         margin-left: 14px;
         padding: 25px 30px;
@@ -224,6 +267,10 @@
         border-radius: 6px;
     }
 }
+
+/* =========================
+Social media section
+   ========================= */
 .da-contact-down-footer-stay-Connected {
     max-width: 402px;
     height: 92px;
@@ -250,278 +297,10 @@
         border-radius: 8px;
         border: 1px solid linear-gradient(to bottom, var(--lime-green-color) 0%, transparent 100%);
     }
+
     .da-contact-socialIcon {
         width: 24px;
         height: 19.5px;
         background-color: transparent;
     }
-}
-
-@media screen and (max-width:1440px) {
-    .form-container {
-        .contact-us-form {
-            padding: 60px;
-            gap: 30px;
-
-            label {
-                font-size: 18px;
-            }
-
-            input {
-                font-size: 16px;
-            }
-
-            input::placeholder,
-            textarea::placeholder {
-                font-size: 16px;
-            }
-
-            .name-and-email-container {
-                gap: 30px;
-
-                .name-email {
-                    padding: 20px 30px;
-                    gap: 16px;
-                    border-radius: 6px;
-
-                    input {
-                        width: 100%;
-                    }
-                }
-            }
-
-            .resons-container {
-                padding: 30px;
-                gap: 30px;
-                border-radius: 8px;
-
-            .resons {
-                    label {
-                        font-size: 16px;
-                    }
-                }
-            }
-
-            .user-message {
-                padding: 20px 30px;
-                gap: 20px;
-
-                textarea {
-                    font-weight: 400;
-                    font-size: 16px;
-                    padding-bottom: 34px;
-
-                }
-            }
-
-            .submit {
-                padding: 14px 36px;
-                border-radius: 6px;
-                font-size: 14px;
-            }
-        }
-    }
-
-    .da-contact-contactIcons {
-        gap: 20px;
-        padding: 40px 0;
-    }
-
-    .da-contact-contactIcon {
-        padding: 14px 20px;
-        border-radius: 6px;
-
-        .icon1 {
-            width: 21px;
-            height: 16.5px;
-        }
-
-        .icon2 {
-            width: 21px;
-            height: 21px;
-        }
-
-        .icon3 {
-            width: 16.5px;
-            height: 20.25px;
-        }
-
-
-        .da_font_size_weight3 {
-            font-size: 16px;
-        }
-    }
-
-
-    .da-contact-down-footer-buttom {
-        p {
-            font-size: 16px;
-        }
-
-        .day {
-            padding: 10px 20px;
-        }
-    }
-
-
-    .da-contact-down-footer-stay-Connected {
-        max-width: 337px;
-        height: 72px;
-        padding-left: 20px;
-        border-radius: 8px;
-        gap: 20px;
-
-        .da-contact-socialLink {
-            max-width: 52px;
-            height: 52px;
-            margin-right: 10px;
-            padding: 16px;
-            border-radius: 6px;
-        }
-
-        .da-contact-socialIcon {
-            width: 20px;
-            height: 20px;
-        }
-    }
-
-
-}
-
-
-@media screen and (max-width:992px) {
-    .form-container {
-
-        .contact-us-form {
-            padding: 24px;
-            gap: 30px;
-
-            label {
-                font-size: 16px;
-            }
-
-            input {
-                font-size: 16px;
-            }
-
-            input::placeholder,
-            textarea::placeholder {
-                font-size: 16px;
-            }
-
-            .name-and-email-container {
-                flex-direction: column;
-                gap: 30px;
-
-                .name-email {
-                    width: 100%;
-                    padding: 18px 24px;
-                    gap: 14px;
-                    border-radius: 6px;
-
-                    input {
-                        width: 100%;
-                    }
-                }
-            }
-
-            .resons-container {
-                padding: 30px;
-                gap: 30px;
-                border-radius: 8px;
-
-                .resons {
-                    flex-direction: column;
-                    row-gap: 20px;
-
-                    label {
-                        width: 100%;
-                        font-size: 16px;
-                    }
-                }
-            }
-
-            .user-message {
-                border-radius: 6px;
-                gap: 14px;
-                padding: 18px 24px;
-
-                textarea {
-                    font-weight: 400;
-                    font-size: 16px;
-                }
-            }
-
-            .submit{
-                width: 100%;
-                border-radius: 6px;
-                padding: 14px 36px;
-                font-size: 14px;
-            }
-        }
-    }
-
-    .da-contact-contactIcons {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 30px 24px;
-    }
-
-    .da-contact-contactIcon {
-        border-radius: 6px;
-        justify-content: center;
-    }
-
-    .da-contact-down-footer {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0px;
-        border-left: 1px solid var(--whit-gray-color);
-        border-right: 1px solid var(--whit-gray-color);
-    }
-
-    .da-line {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 1px;
-        background-color: var(--whit-gray-color);
-    }
-
-.da-contact-down-footer-buttom {
-        padding: 20px 0px;
-
-        .day {
-            border-radius: 4px;
-        }
-    }
-
-
-    .da-contact-down-footer-stay-Connected {
-        max-width: 358px;
-        height: 112px;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 20px 40px 20px;
-        border-radius: 8px;
-        gap: 14px;
-        border: none;
-        border-top: 1px solid var(--whit-gray-color);
-
-        .da-contact-socialLink {
-            margin-right: 10px;
-            padding: 16px;
-            border-radius: 6px;
-        }
-    }
-    .reson-checkbox{
-    padding: 13px;
-    }
-
-
 }
