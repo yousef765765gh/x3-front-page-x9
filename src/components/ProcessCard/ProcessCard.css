@@ -8,6 +8,11 @@
     flex-direction: column;
     gap: 50px;
     padding: 100px 50px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    &:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px var(--whit-green-text-color);
+    }
     .number-card{
         display: flex;
         align-items: center;
@@ -97,3 +102,5 @@
     }
 }
 /* finsh */
+
+
