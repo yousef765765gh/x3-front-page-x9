@@ -47,13 +47,14 @@
                 background-color: var(--whit-gray-color);
                 border: 1px solid var(--whit-gray-color);
                 border-radius: 8px;
-
+                
                 input {
                     width: 360px;
                     background-color: #262626;
                     outline: none;
                     background: none;
                     border: none;
+                    border-bottom: 1px solid white;
                     border-bottom: 1px solid var(--whit-gray-color);
 
                 }
