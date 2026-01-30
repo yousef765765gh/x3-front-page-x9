@@ -59,15 +59,15 @@ const DAForm = ({ editingItem, onSave }) => {
     };
 
     const topIcons = [
-        { name: "hello@squareup.com", icon: "/assets/img/Icon messag footer.svg" },
-        { name: "+91 91813 23 2309", icon: "/assets/img/Icon phone footer.svg" },
-        { name: "Get Location", icon: "/assets/img/Icon  loction footer.svg" },
+        { name: "hello@squareup.com", icon: "assets/img/Icon messag footer.svg" },
+        { name: "+91 91813 23 2309", icon: "assets/img/Icon phone footer.svg" },
+        { name: "Get Location", icon: "assets/img/Icon  loction footer.svg" },
     ];
 
     const bottomIcons = [
-        { name: "Facebook", icon: "/assets/img/Icon facbook footer.svg", url: "https://facebook.com" },
-        { name: "Twitter", icon: "/assets/img/Icon twiter footer.svg", url: "https://twitter.com" },
-        { name: "LinkedIn", icon: "/assets/img/icon linked footer.svg", url: "https://linkedin.com" },
+        { name: "Facebook", icon: "assets/img/Icon facbook footer.svg", url: "https://facebook.com" },
+        { name: "Twitter", icon: "assets/img/Icon twiter footer.svg", url: "https://twitter.com" },
+        { name: "LinkedIn", icon: "assets/img/icon linked footer.svg", url: "https://linkedin.com" },
     ];
 
     const openSocialLink = (link) => {

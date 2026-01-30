@@ -5,28 +5,28 @@ const Footer = ({logo,items = []}) => {
     const iconbutton =[
         {
             Social_Media:"#",
-            image:"/assets/img/Icon facbook footer.svg"
+            image:"assets/img/Icon facbook footer.svg"
         },
         {
             Social_Media:"#",
-            image:"/assets/img/Icon twiter footer.svg"
+            image:"assets/img/Icon twiter footer.svg"
         },
         {
             Social_Media:"#",
-            image:"/assets/img/icon linked footer.svg"
+            image:"assets/img/icon linked footer.svg"
         }
     ]
     const infoContact = [
         {
-            logoContact : "/assets/img/Icon messag footer.svg",
+            logoContact : "assets/img/Icon messag footer.svg",
             content :"hello@squareup.com"
         },
         {
-            logoContact : "/assets/img/Icon phone footer.svg",
+            logoContact : "assets/img/Icon phone footer.svg",
             content :"+91 91813 23 2309"
         },
         {
-            logoContact : "/assets/img/Icon  loction footer.svg",
+            logoContact : "assets/img/Icon  loction footer.svg",
             content :"Somewhere in the World"
         },
     ]

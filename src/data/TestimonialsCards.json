@@ -5,7 +5,7 @@
     "name": "John Smith",
     "job": "CEO of Chic Boutique",
     "btn": "Open Website",
-    "img": "/assets/img/Profile1.png",
+    "img": "assets/img/Profile1.png",
     "paddingBottom" : "40px"
   },
   {
@@ -14,7 +14,7 @@
     "name": "Sarah Johnson",
     "job": "Founder of HungryBites.",
     "btn": "Open Website",
-    "img": "/assets/img/Profile2.png",
+    "img": "assets/img/Profile2.png",
     "paddingBottom" : "55px"
 
   },
@@ -24,7 +24,7 @@
     "name": "Mark Thompson",
     "job": "CEO of EventMasters",
     "btn": "Open Website",
-    "img": "/assets/img/Profile3.png",
+    "img": "assets/img/Profile3.png",
     "paddingBottom" : "40px"
   },
   {
@@ -33,7 +33,7 @@
     "name": "Laura Adams",
     "job": "COO of ProTech Solutions.",
     "btn": "Open Website",
-    "img": "/assets/img/Profile4.png",
+    "img": "assets/img/Profile4.png",
     "paddingBottom" : "82px"
   },
   {
@@ -42,7 +42,7 @@
     "name": "Michael Anderson",
     "job": "Founder of Dream Homes Realty.",
     "btn": "Open Website",
-    "img": "/assets/img/Profile5.png",
+    "img": "assets/img/Profile5.png",
     "paddingBottom" : "82px"
   },
   {
@@ -51,7 +51,7 @@
     "name": "Emily Turner",
     "job": "CEO of FitLife Tracker",
     "btn": "Open Website",
-    "img": "/assets/img/Profile6.png",
+    "img": "assets/img/Profile6.png",
     "paddingBottom" : "40px"
   }
 ]

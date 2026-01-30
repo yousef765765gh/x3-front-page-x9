@@ -6,7 +6,7 @@ const testimonials = [
         name: "John Smith",
         job: "CEO of Chic Boutique",
         btn: "Open Website",
-        img: "/assets/img/Profile1.png",
+        img: "assets/img/Profile1.png",
     },
     {
         title: "Working with SquareUp was a breeze.",
@@ -15,7 +15,7 @@ const testimonials = [
         name: "Sarah Johnson",
         job: "Founder of HungryBites.",
         btn: "Open Website",
-        img: "/assets/img/Profile2.png",
+        img: "assets/img/Profile2.png",
     },
     {
         title:
@@ -25,7 +25,7 @@ const testimonials = [
         name: "Mark Thompson",
         job: "CEO of EventMasters",
         btn: "Open Website",
-        img: "/assets/img/Profile3.png",
+        img: "assets/img/Profile3.png",
     },
     {
         title: "ProTech Solutions turned to SquareUp to automate our workflow",
@@ -34,7 +34,7 @@ const testimonials = [
         name: "Laura Adams",
         job: "COO of ProTech Solutions.",
         btn: "Open Website",
-        img: "/assets/img/Profile4.png",
+        img: "assets/img/Profile4.png",
     },
     {
         title:
@@ -44,7 +44,7 @@ const testimonials = [
         name: "Michael Anderson",
         job: "Founder of Dream Homes Realty.",
         btn: "Open Website",
-        img: "/assets/img/Profile5.png",
+        img: "assets/img/Profile5.png",
     },
     {
         title:
@@ -54,7 +54,7 @@ const testimonials = [
         name: "Emily Turner",
         job: "CEO of FitLife Tracker",
         btn: "Open Website",
-        img: "/assets/img/Profile6.png",
+        img: "assets/img/Profile6.png",
     },
 ];
 

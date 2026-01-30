@@ -48,10 +48,10 @@ function App() {
   return (
     <>
     <NavBar
-      logo="/assets/img/logo-navbar.png"
+      logo="assets/img/logo-navbar.png"
       items={navitem}
       btn="Contact Us"
-      media_btn= "/assets/img/nav-ul-media.svg"
+      media_btn= "assets/img/nav-ul-media.svg"
     />
     <Routes>
       <Route path="/" element={<Home/>}/>
@@ -62,7 +62,7 @@ function App() {
       <Route path="/contact_us" element={<Contact/>}/>
     </Routes>
     <Footer
-      logo="/assets/img/logo-navbar.png"
+      logo="assets/img/logo-navbar.png"
       items={liFooter}
     />
     </>
