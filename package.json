@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://yousef765765gh.github.io/x3-front-page-x9/",
+  "homepage": "https://yousef765765gh.github.io/x3-front-beg-v9/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
