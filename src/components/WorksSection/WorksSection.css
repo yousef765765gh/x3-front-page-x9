@@ -19,6 +19,7 @@
     background-color: var(--whit-gray-color);
     &:hover{
         background-color: var(--whit-green-text-color);
+        transition: 0.5s all;
     }
 }
 

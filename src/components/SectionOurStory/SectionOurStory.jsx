@@ -2,10 +2,26 @@ import './SectionOurStory.css'
 import TitleAtSquer from '../TitleAtSquer/TitleAtSquer'
 import Aboutdata from '../../data/Aboutdata.json';
 import ProcessCard from '../ProcessCard/ProcessCard';
-
+import AboutHeroSection from '../about_hero_section/AboutHeroSection';
+import AboutSquareUp from '../AboutSquareUp/AboutSquareUp';
+import AboutSquareUpImage from "/assets/img/SquareUpsectionabout.png"
+import SquareUpImage from "/assets/img/LogoSq.svg"
+import heroabout from "/assets/img/about us section Home+hero work.png"
 const SectionOurStory = () => {
   return (
     <section className="our-story">
+      <AboutHeroSection
+                hasButton={false}            
+                imageBackground={heroabout}
+                titleSection="About Us"
+                contentSection="Welcome to SquareUp, where collaboration, expertise, and client-centricity intersect to shape the future of digital innovation."
+            />
+            <AboutSquareUp
+              title="About SquareUp"
+              description="SquareUp is a digital product agency that is passionate about crafting exceptional digital experiences. We specialize in design, engineering, and project management, helping businesses thrive in the digital landscape. At SquareUp, we follow a structured and collaborative process to ensure the successful delivery of exceptional digital products. Our process combines industry best practices, creative thinking, and a client-centric approach."
+              bgImage={AboutSquareUpImage}
+              icon={SquareUpImage}
+              />
         <TitleAtSquer
         title="Our Story"
         className='ourstory-title'
