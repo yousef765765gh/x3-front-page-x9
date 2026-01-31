@@ -1,8 +1,6 @@
 .our-story {
     max-width: 100%;
     height: max-content;
-    /* border: 1px solid var(--whit-gray-color); */
-    /* border-top: none !important; */
     overflow:hidden;
     .ourstory-title{
         padding: 100px  50px;

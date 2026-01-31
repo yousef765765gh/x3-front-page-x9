@@ -1,4 +1,3 @@
-// import DASlider from '../DASlider/DASlider';
 import './DATestimonialsSection.css';
 import CardsData from "../../data/TestimonialsCards.json";
 import slider from '/assets/img/contact p Home+work +process.png'

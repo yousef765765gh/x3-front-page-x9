@@ -1,4 +1,3 @@
-import AboutSquareUp from "../components/AboutSquareUp/AboutSquareUp"
 import SectionOurStory from "../components/SectionOurStory/SectionOurStory"
 
 import TodaySquareUp from "../components/TodaySquareUp/TodaySquareUp"
